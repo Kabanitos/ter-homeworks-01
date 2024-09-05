@@ -74,5 +74,12 @@
 
 9. Объясните, почему при этом не был удалён docker-образ **nginx:latest**. Ответ **ОБЯЗАТЕЛЬНО НАЙДИТЕ В ПРЕДОСТАВЛЕННОМ КОДЕ**, а затем **ОБЯЗАТЕЛЬНО ПОДКРЕПИТЕ** строчкой из документации [**terraform провайдера docker**](https://docs.comcloud.xyz/providers/kreuzwerker/docker/latest/docs).  (ищите в классификаторе resource docker_image )
 
+### Ответ
+
+![keep_locally](img/keep_locally.png)
+
+```keep_locally = true```
+
+Если значение стоит **true** Docker image не будет удален при операции уничтножения. Если значение **false**, то образ будет удален из локального хранилища docker при операции destroy.
 
 ------
